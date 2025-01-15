@@ -2,22 +2,39 @@ Regression Models: Ridge, Bayesian, and Gaussian Process
 This project demonstrates the implementation of Ridge Regression, Bayesian Ridge Regression, and Gaussian Process Regression models on a housing dataset, with a focus on understanding the effects of regularization (alpha values) on model performance. The goal is to explore how each model handles regularization and how they differ in terms of predictive accuracy and model behavior.
 
 Table of Contents
+
 Introduction
+
 Models Explained
+
 Ridge Regression
+
 Bayesian Ridge Regression
+
 Gaussian Process Regression
+
 Effect of Regularization
+
 Ridge Regularization
+
 Bayesian Regularization
+
 Gaussian Regularization
+
 Graphs & Visualization
+
 Actual vs Predicted
+
 Residuals Plot
+
 Prediction Distribution Comparison
+
 Performance Evaluation
+
 Installation and Requirements
+
 Conclusion
+
 Introduction
 This project focuses on understanding the effects of regularization on various regression models, specifically:
 
@@ -72,13 +89,11 @@ In the Ridge Regression plot, the predicted values (dashed lines) should closely
 Residuals Plot
 Residuals are the differences between the predicted and actual values. A residuals plot helps us assess if the model is underfitting or overfitting. Ideally, residuals should be randomly scattered around zero, with no discernible pattern. A clear pattern in residuals may indicate a model that is overfitting or underfitting.
 
-Example Graph:
 
 In the residuals plot for Bayesian Ridge Regression, if the residuals are evenly distributed around zero, the model is performing well. Large deviations or systematic patterns indicate potential problems with the model’s fit.
 Prediction Distribution Comparison
 This graph compares the distributions of predictions from different models. By visualizing the spread of predictions, we can compare how each model handles uncertainty and regularization. This is useful to understand how each model adapts to different levels of regularization and the noise in the data.
 
-Example Graph:
 
 The histogram for Bayesian Ridge Regression may show a narrow distribution of predictions when regularization is strong (higher alpha values), indicating that the model is confident in its predictions.
 Performance Evaluation
@@ -90,10 +105,8 @@ R²: Higher values indicate better fit.
 Installation and Requirements
 To run the code, ensure that you have the following libraries installed:
 
-bash
-Copy code
 pip install numpy pandas matplotlib scikit-learn
-You will also need the housing.csv dataset. Ensure the dataset is in the appropriate location in the directory before running the code.
+Ensure the dataset is in the appropriate location in the directory before running the code.
 
 Conclusion
 This project provides a detailed exploration of three different regression models—Ridge, Bayesian Ridge, and Gaussian Process Regression—and their behavior under varying levels of regularization. Regularization is crucial for preventing overfitting and ensuring that the models generalize well to new data. The visualizations and performance metrics help to analyze how the models perform with different regularization strengths and how they differ in terms of prediction accuracy and residuals.
