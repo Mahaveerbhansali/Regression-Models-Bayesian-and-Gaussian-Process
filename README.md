@@ -59,11 +59,7 @@ Gaussian Process Regression is a non-parametric model that assumes the underlyin
 
 Effect of Regularization
 Ridge Regularization
-Ridge regression is sensitive to the choice of alpha. When 
-𝛼
-α is set to a high value, the model’s coefficients are strongly regularized, resulting in underfitting. On the other hand, when 
-𝛼
-α is set to a low value, the model’s coefficients are less regularized, leading to overfitting if the model is too complex. This is visible in the model's performance and residuals.
+Ridge regression is sensitive to the choice of alpha. When α is set to a high value, the model’s coefficients are strongly regularized, resulting in underfitting. On the other hand, when α is set to a low value, the model’s coefficients are less regularized, leading to overfitting if the model is too complex. This is visible in the model's performance and residuals.
 
 Key Observation: As the alpha value increases, the model becomes simpler with smaller coefficients, reducing variance but increasing bias.
 
@@ -80,10 +76,10 @@ For Gaussian Process Regression, regularization is controlled by alpha, which re
 Key Observation: As alpha increases, the model’s predictions become smoother and less sensitive to small fluctuations in the data.
 
 Graphs & Visualization
+
 Actual vs Predicted
 This section includes graphs comparing the actual target values (housing prices) to the predicted values from each model. By plotting the predicted values against the actual values, we can visually assess the performance of each model.
 
-Example Graph (for Ridge Regression):
 
 In the Ridge Regression plot, the predicted values (dashed lines) should closely follow the actual values (solid line), showing how well the model captures the data.
 Residuals Plot
@@ -106,10 +102,9 @@ Installation and Requirements
 To run the code, ensure that you have the following libraries installed:
 
 pip install numpy pandas matplotlib scikit-learn
-Ensure the dataset is in the appropriate location in the directory before running the code.
+You will also need the housing.csv dataset. Ensure the dataset is in the appropriate location in the directory before running the code.
 
 Conclusion
 This project provides a detailed exploration of three different regression models—Ridge, Bayesian Ridge, and Gaussian Process Regression—and their behavior under varying levels of regularization. Regularization is crucial for preventing overfitting and ensuring that the models generalize well to new data. The visualizations and performance metrics help to analyze how the models perform with different regularization strengths and how they differ in terms of prediction accuracy and residuals.
 
 By experimenting with different regularization parameters (alpha, alpha_1, alpha_2), you can see how each model adjusts its behavior to balance bias and variance.
-
